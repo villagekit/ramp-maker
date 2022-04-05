@@ -1,0 +1,31 @@
+{
+  "name": "ramp-maker",
+  "version": "0.0.0",
+  "description": "stepper motor acceleration ramp generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/**/*.js | tap-arc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/villagekit/ramp-maker.git"
+  },
+  "keywords": [
+    "stepper",
+    "motor",
+    "acceleration",
+    "ramp",
+    "trapezoid",
+    "trapezoidal"
+  ],
+  "author": "Michael Williams",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/villagekit/ramp-maker/issues"
+  },
+  "homepage": "https://github.com/villagekit/ramp-maker#readme",
+  "devDependencies": {
+    "tap-arc": "^0.3.4",
+    "tape": "^5.5.2"
+  }
+}
