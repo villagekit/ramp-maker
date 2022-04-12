@@ -1,5 +1,5 @@
 {
-  "name": "ramp-maker",
+  "name": "@villagekit/stepper-ramp",
   "version": "0.0.0",
   "description": "stepper motor acceleration ramp generator",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/villagekit/ramp-maker.git"
+    "url": "git+https://github.com/villagekit/stepper-ramp.git"
   },
   "keywords": [
     "stepper",
@@ -21,9 +21,9 @@
   "author": "Michael Williams",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/villagekit/ramp-maker/issues"
+    "url": "https://github.com/villagekit/stepper-ramp/issues"
   },
-  "homepage": "https://github.com/villagekit/ramp-maker#readme",
+  "homepage": "https://github.com/villagekit/stepper-ramp#readme",
   "devDependencies": {
     "tap-arc": "^0.3.4",
     "tape": "^5.5.2"
