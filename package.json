@@ -1,6 +1,6 @@
 {
   "name": "@villagekit/stepper-ramp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "stepper motor acceleration ramp generator",
   "main": "index.js",
   "scripts": {
