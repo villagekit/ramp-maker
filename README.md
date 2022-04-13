@@ -25,10 +25,8 @@ console.log(stepPeriodsInMicrosecs)
 
 `options` is an object with shape:
 
-- `targetSpeedInStepsPerSec`:
-  - default `10`
-- `accelerationInStepsPerSecPerSec`:
-  - default `1`
+- `targetSpeedInStepsPerSec`: max speed in (steps / second)
+- `accelerationInStepsPerSecPerSec`: acceleration in (steps / second^2)
 
 ## `stepPeriods = stepperRamp.movement(steps)`
 

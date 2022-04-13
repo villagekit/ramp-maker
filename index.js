@@ -1,19 +1,28 @@
 const MICROSECS_IN_SEC = 1e6
 
-const DEFAULT_TARGET_SPEED_IN_STEPS_PER_SEC = 10
-const DEFAULT_ACCELERATION_IN_STEPS_PER_SEC_PER_SEC = 1
-
 module.exports = createStepperRamp
 
 function createStepperRamp(options) {
   return new StepperRamp(options)
 }
 
-function StepperRamp(options = {}) {
+function StepperRamp(options) {
+  if (options === null || typeof options !== 'object') {
+    throw new Error("StepperRamp: Expected `options` object argument")
+  }
+
   const {
-    targetSpeedInStepsPerSec = DEFAULT_TARGET_SPEED_IN_STEPS_PER_SEC,
-    accelerationInStepsPerSecPerSec = DEFAULT_ACCELERATION_IN_STEPS_PER_SEC_PER_SEC,
+    targetSpeedInStepsPerSec,
+    accelerationInStepsPerSecPerSec,
   } = options
+
+  if (typeof targetSpeedInStepsPerSec !== 'number') {
+    throw new Error("StepperRamp: Expected `options.targetSpeedInStepsPerSec` number argument")
+  }
+
+  if (typeof accelerationInStepsPerSecPerSec !== 'number') {
+    throw new Error("StepperRamp: Expected `options.accelerationInStepsPerSecPerSec` number argument")
+  }
 
   this.targetSpeedInStepsPerSec = targetSpeedInStepsPerSec
   this.accelerationInStepsPerSecPerSec = accelerationInStepsPerSecPerSec
